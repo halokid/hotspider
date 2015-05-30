@@ -46,7 +46,7 @@ func (this *MyPageProcesser) Process(p *page.Page) {
     // hotKey := query.Find(".list-title").Text();
     // hotKey := query.Find(".list-title").Html();
     hotKey := query.Find(".list-title").Each(func( i int, s *goquery.Selection ){
-        println(s.Text(), "--------------------")
+        println(s.Text())
     })
     
     
